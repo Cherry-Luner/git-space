@@ -2,10 +2,10 @@ import pandas as pd
 import pickle
 
 # 加载数据
-data = pd.read_csv('./data/data_p.csv',index_col=0)
+data = pd.read_csv('./data/data_new.csv',index_col=0)
 
 # 加载模型
-with open('./model/YYS_Model.pkl','rb') as f:
+with open('./model/yjw_Model.pkl','rb') as f:
     model = pickle.load(f)
 
 # 预测数据
